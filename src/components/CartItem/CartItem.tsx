@@ -5,17 +5,15 @@ import Button from '../Button/Button';
 import { Order } from '../../types/types';
 import './CartItem.css'
 
-interface CartItemProps extends Order {
-  key: string
-}
+interface CartItemProps extends Order { }
 
-export default function CartItem({ meal, quantity, key }: CartItemProps) {
+export default function CartItem({ meal, quantity }: CartItemProps) {
   const dispatch = useAppDispatch();
   const clickMinus = () => dispatch(removeMeal({ meal, quantity: 1 }));
   const clickPlus = () => dispatch(addMeal({ meal, quantity: 1 }));
 
   return (
-    <li className='cart-item' key={key}>
+    <li className='cart-item' >
       <img src={meal.image} alt={meal.name} className='order-image' />
       <div className="cart-info">
         <h3>{meal.name}</h3>
