@@ -1,0 +1,36 @@
+.info-container {
+  height: 400px;
+  overflow: hidden;
+  background: url("/src/assets/kitchen-img.jpg") center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-img {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.info {
+  min-height: 200px;
+  max-width: 700px;
+  margin: 0 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #6b068adb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0px 13px 34px 5px rgba(85, 85, 85, 0.5);
+}
+
+.info h2 {
+  font-size: 35px;
+}

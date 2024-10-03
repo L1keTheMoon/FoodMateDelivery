@@ -1,0 +1,50 @@
+.message {
+  width: 400px;
+  text-align: center;
+  /* padding: 10px 15px 0px; */
+  overflow: hidden;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 5px 3px #8f8f8f;
+  color: #6b068a;
+  position: fixed;
+  bottom: 50px;
+  left: calc(50% - 200px);
+  transform: translateY(80px);
+  opacity: 0;
+  animation: 1s ease-out forwards appearance;
+}
+
+.message>p {
+  padding: 5px;
+}
+
+.message-status {
+  width: 100%;
+  height: 5px;
+  background-color: #6b068a;
+  animation: 4s linear forwards load;
+}
+
+@keyframes load {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes appearance {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
