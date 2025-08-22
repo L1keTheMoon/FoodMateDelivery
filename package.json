@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://RomanBurlakov.github.io/FoodMateDelivery",
+  "homepage": "https://l1kethemoon.github.io/FoodMateDelivery",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
